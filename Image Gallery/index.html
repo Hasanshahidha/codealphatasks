@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>My Image Gallery</h1>
+    <div class="filters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="nature">Nature</button>
+      <button class="filter-btn" data-category="animals">Animals</button>
+      <button class="filter-btn" data-category="architecture">Architecture</button>
+    </div>
+  </header>
+
+  <div class="gallery">
+    <div class="image" data-category="nature">
+      <img src="images/nature1.jpg" alt="Nature">
+    </div>
+    <div class="image" data-category="animals">
+      <img src="images/animal1.jpg" alt="Animal">
+    </div>
+    <div class="image" data-category="architecture">
+      <img src="images/building1.jpg" alt="Building">
+    </div>
+    <!-- Add more images as needed -->
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="">
+    <div class="navigation">
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
